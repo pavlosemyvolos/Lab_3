@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&display=swap");
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("Pacifico-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --color-yel:#ffe4b5;
+    --color-gre:#3d9970;
+    --color-pur:#7d3c98;
+    --font-family-h:"Pacifico";
+    --font-family-text:"Raleway";
+    --font-size-menu1:30px;
+    --font-size-menu2:64px;
+    --font-size-menu3:24px;
+    --font-size-menu4:24px;
+    --font-size-h1: 64px;
+    --font-size-author1:28px;
+    --font-size-main1:28px;
+    /*--font-size-h2: 32px;*/
+    --width: 1440px;
+    --width-menu1: 720px;
+    --width-menu2: 720px;
+    --width-menu3: 720px;
+    --width-menu4: 720px;
+    --width-author1: 720px;
+    --width-author2: 720px;
+    --width-main1: 720px;
+    --width-main2: 720px;
+    --height-menu1: 128px;
+    --height-menu2: 128px;
+    --height-menu3: 128px;
+    --height-menu4: 128px;
+    --heigt-author1:1000px;
+    --heigt-author2:800px;
+    --heigt-main1:1050px;
+    --heigt-main2:1050px;
+}
+
+
+body {
+    width: 1440px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #ffe4b5;
+}
+
+.menu1 {
+    width: var(--width-menu1);
+    height: var(--height-menu1);
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.menu1 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 0px;
+}
+
+.menu1 li {
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-menu1);
+    color: var(--color-gre);
+    margin: 0px;
+    padding: 5px;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.menu1 a {
+    text-decoration: none;
+    color:var(--color-gre);
+}
+
+.menu1 a:hover {
+    color: darkgreen;
+}
+
+.menu2 {
+    width: var(--width-menu1);
+    height: var(--height-menu1);
+    margin-left: 720px;
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-menu2);
+    color: var(--color-gre);
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.author1{
+    position: absolute;
+    margin-top: 128px;
+    width: var(--width-author1);
+    height: var(--heigt-author1);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-author1);
+    color: var(--color-pur);
+    text-align: center;
+    border-left:1px solid black ;
+}
+
+.author1 h1{
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-h1);
+    color: #3d9970;
+    -webkit-text-stroke: 1px #000000;
+    text-align: center;
+}
+
+.author2{
+    position: absolute;
+    margin-top: 128px;
+    margin-left: 720px;
+    width: var(--width-author2);
+    height: var(--heigt-author2);
+    border-right: 1px solid black;
+}
+
+.author2 img {
+    max-width: 200%; 
+    max-height: 200%;
+    display: block; 
+    margin: auto;
+    margin-top: 150px;
+}
+
+.main1{
+    position: absolute;
+    margin-top: 928px;
+    width: var(--width-main1);
+    height: var(--heigt-main1);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-main1);
+    color: var(--color-pur);
+    text-align: center;
+    border-left:1px solid black ;
+}
+
+.main1 h1{
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-h1);
+    color: #3d9970;
+    -webkit-text-stroke: 1px #000000;
+    text-align: center;
+}
+
+.main2 {
+    position: absolute;
+    margin-top: 928px;
+    margin-left: 720px;
+    width: var(--width-main2);
+    height: var(--heigt-main2);
+    border-right: 1px solid black;
+}
+
+.main2 img {
+    width: 37%; 
+    height: auto; 
+    margin: 5%; 
+    box-sizing: border-box;
+}
+
+.menu3{
+    position: absolute;
+    width: var(--width-menu3);
+    height: var(--height-menu3);
+    margin-top: 1978px;
+    border: 1px solid black;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-menu4);
+    text-align: center;
+}
+
+.menu4{
+    position: absolute;
+    width: var(--width-menu3);
+    height: var(--height-menu3);
+    margin-top: 1978px;
+    margin-left: 720px;
+    border: 1px solid black;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-menu4);
+    text-align: center;
+}
+
